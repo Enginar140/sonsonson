@@ -1,0 +1,51 @@
+/* Video Akışı Stilleri */
+.video-stream-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.video-canvas {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  border-radius: 4px;
+  display: block;
+}
+
+.connection-status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.connection-status .connected {
+  background-color: rgba(46, 125, 50, 0.8);
+  color: white;
+}
+
+.connection-status .connecting {
+  background-color: rgba(239, 83, 80, 0.8);
+  color: white;
+}
+
+/* Konteynır Stilleri */
+.green-container {
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.green-container h3 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #c8e6c9;
+  padding-bottom: 8px;
+  text-align: center;
+}

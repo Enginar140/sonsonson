@@ -1,0 +1,92 @@
+.telemetry-wrapper {
+  display: flex;
+  position: fixed;
+  top: 57px;
+  left: 7px;
+  right: 7px;
+  bottom: 7px;
+  z-index: 999;
+  gap: 7px;
+}
+
+.green-container {
+  background-color: #4caf50;
+  flex: 2;
+  color: white;
+  border-radius: 8px;
+  padding: 15px;
+  overflow-y: auto;
+  max-height: calc(100vh - 65px);
+}
+
+.red-container {
+  background-color: #ff4d4d;
+  flex: 1;
+  color: black;
+  border-radius: 8px;
+  padding: 15px;
+  overflow-y: auto;
+  max-height: calc(100vh - 65px);
+  position: relative;
+}
+
+.telemetry-content {
+  width: 100%;
+  text-align: left;
+}
+
+.telemetry-content p {
+  margin: 10px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.telemetry-content strong {
+  min-width: 150px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.error-message {
+  color: white;
+  background-color: #8b0000;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 300px;
+  border: 1px solid white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .telemetry-wrapper {
+    flex-direction: column;
+  }
+
+  .green-container,
+  .red-container {
+    width: 100%;
+    max-height: calc(50vh - 30px);
+  }
+}
+.video-canvas {
+  display: block;
+  background-color: black;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.video-stream-container {
+  position: relative;
+  width: 100%;
+}
